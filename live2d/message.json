@@ -29,7 +29,7 @@
             "text": ["在找什么东西呢，需要帮忙吗？"]
         }
         {
-            "selector": ".gt-btn-text",
+            "selector": ".gt-btn gt-btn-public",
             "text": ["要发送评论吗？"]
         }
     ],
