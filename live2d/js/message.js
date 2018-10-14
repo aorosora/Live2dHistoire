@@ -289,6 +289,7 @@ if(!norunFlag){
 					type: 'POST',
 					url: talkAPI,
 					data: {
+						"key":'9a32276c0eec4744a41b0eb2f3b0f612',
 						"info":info_,
 						"userid":userid_
 					},
