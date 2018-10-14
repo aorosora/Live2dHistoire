@@ -110,7 +110,7 @@ if(!norunFlag){
 		initTips();
 	
 		var text;
-		if(document.referrer !== window.location.href){
+		if(document.referrer !== '' && document.referrer.split('/')[2] !== window.location.host ){
 			var referrer = document.createElement('a');
 			referrer.href = document.referrer;
 			text = '嗨！来自 <span style="color:#0099cc;">' + referrer.hostname + '</span> 的朋友！';
