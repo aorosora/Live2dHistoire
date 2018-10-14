@@ -110,8 +110,8 @@ if(!norunFlag){
 		initTips();
 	
 		var text;
-		var referrer = document.createElement('a');
-		if(document.referrer !== '' && referrer.hostname !== window.location.host ){
+		if(document.referrer !== '' && document.referrer.hostname !== window.location.host ){
+			var referrer = document.createElement('a');
 			referrer.href = document.referrer;
 			text = '嗨！来自 <span style="color:#0099cc;">' + referrer.hostname + '</span> 的朋友！';
 			var domain = referrer.hostname.split('.')[1];
