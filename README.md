@@ -12,15 +12,15 @@
 ### 准备工作
 首先到下载代码。
 
-然后把解压出来的文件夹改名为：live2d 。
+然后把解压出来live2d文件夹复制到网站根目录 。
 
 ### 正式开工，文字部分参考自[在 Web 上展示 Live2D 吧！](https://github.com/galnetwen/Live2D)
-在需要页面的头部文件（header）引入界面样式，在 head 标签内插入如下代码：
+在 WordPress 主题的头部文件（/wp-content/themes/Sakura/header.php）引入界面样式，在 head 标签内插入如下代码：
 ```html
 <link rel="stylesheet" href="/live2d/css/live2d.css" />
 ```
 
-在 需要页面的body 标签内找到合适的位置插入 Live2D 看板娘的元素，按照 Html 书写规范写 
+在 body 标签内插入 Live2D 看板娘的元素，按照 Html 书写规范写 
 ```html
 <div id="landlord" style="left:5px;bottom:0px;">
     <div class="message" style="opacity:0"></div>
@@ -43,18 +43,11 @@
         <div class="live_ico_item type_quit" id="hideButton"></div>
         <input name="live_statu_val" id="live_statu_val" value="0" type="hidden" />
         <audio src="" style="display:none;" id="live2d_bgm" data-bgm="0" preload="none"></audio>
-        <input name="live2dBGM" value="音乐地址" type="hidden">
+        <input name="live2dBGM" value="/music/file" type="hidden">
         <input id="duType" value="douqilai,l2d_caihong" type="hidden">
     </div>
 </div>
 <div id="open_live2d">召唤伊斯特瓦尔</div>
-```
-如果需要BGM支持可以按照上面的例子添加：
-```html
-<input name="live2dBGM" value="音乐地址" type="hidden">
-```
-在 需要页面的 body 标签结束前插入如下代码：
-```html
 <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>
 var message_Path = '/live2d/';//资源目录，如果目录不对请更改
