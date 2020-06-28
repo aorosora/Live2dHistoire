@@ -43,7 +43,7 @@
         <div class="live_ico_item type_quit" id="hideButton"></div>
         <input name="live_statu_val" id="live_statu_val" value="0" type="hidden" />
         <audio src="" style="display:none;" id="live2d_bgm" data-bgm="0" preload="none"></audio>
-        <input name="live2dBGM" value="/music/file" type="hidden">
+        <input name="live2dBGM" value="/music/file" type="hidden">//记得改音乐的相对路径为自己的嗷，不用的话删了就好
         <input id="duType" value="douqilai,l2d_caihong" type="hidden">
     </div>
 </div>
