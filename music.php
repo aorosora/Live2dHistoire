@@ -1,4 +1,6 @@
 <?php 
+// Source code frome https://github.com/lychs1998/img-api
+
 $music_array = glob("music/*.{flac,mp3}",GLOB_BRACE); 
  
 $domain = 'wordpress.org';
